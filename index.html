@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>Ti</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>img[alt="www.000webhost.com"]{display:none;}</style>
+		<!-- <script>alert("This website still under-construction, and will be updated from time to time, for this time it's not made perfectly for mobile uses")</script> -->
+    </head>
+
+    <body>
+        
+        <div class="footer"></div> <!-- just the footer style-->
+        <img src="xplogo.png" class="xplogo"class="popup" ONCLICK="startpopFun()"> <!-- Windows xp logo which is on the Start on the footer-->
+        <div class="timeRN"><p class="timeText"></p></div>  <!-- Time on the footer-->
+
+        <button class="start"class="popup" onclick="startpopFun()">start</button>  <!--start button with popup function-->
+        <div class="startpopup" id="startpopup">  <!-- start popup-->
+            <img src="peronalPic.jpg" id="mypic">
+            <a href="https://www.linkedin.com/in/qutibah-ananzeh-359078226/" target="_blank"><h2 id="myname">Qutibah Ananzeh</h2></a>
+            <h3 id="mymajor">computer engineering</h3>
+            <div class="programmingLang">
+                <h4 id="programmingt">Programming Languages</h3>
+                <img src="JS.png" alt="" id="JS">
+                <h3 id="JSt">JavaScript</h3>
+                <img src="python.png" alt="" id="python">
+                <h3 id="pythont">Python</h3>
+                <img src="cpp.png" alt="" id="cpp">
+                <h3 id="cppt">C++</h3>
+                <h4 id="programs">Programs I work with</h4>
+                <hr class="line"> <hr class="line2">
+                <img src="unitylogo.png" id="unity">
+                <h3 id="unityt">Unity</h3>
+                <img src="blenderlogo.png" alt="" id="blender">
+                <h3 id="blendert">Blender</h3>
+                
+            </div>
+        </div>
+
+        <div> <!-- Just bot icon with the text-->
+            <img src="justbotlogoTw.png" alt="" class="box" id="justbotlogo" onclick="window.open('justbot/index.html')">
+           <a href="justbot/index.html" target="_blank"> <p id="justbotText" class="progName">JustDaysBot</p></a>
+        </div>
+        <div> <!-- Just bot icon with the text-->
+            <img src="justbotlogo.png" alt="" class="box" id="chromeExLogo" onclick="window.open('https://chrome.google.com/webstore/detail/just-extension/ckpjnaimhgfdngbhcojbmlmnncdmenef?hl=en&authuser=0')">
+           <a href="https://chrome.google.com/webstore/detail/just-extension/ckpjnaimhgfdngbhcojbmlmnncdmenef?hl=en&authuser=0" target="_blank"> <p id="chromeExText" class="progName">JUST Extension</p></a>
+        </div>
+
+
+        
+        <div>   <!-- Recycle Bin icon with the text -->
+        <img src="RecycleBin.png"class="box" id="recycleBin">
+        <p id="recyclebintext" class="progName" >Recycle bin</p>
+        </div>
+
+        <div> <!-- Certificates Folder with the text -->
+            <img src="folder.png" alt="" class="box" id="certifcateFolder">
+            <p id="certifcateFoldertext" class="progName">Certificates</p>
+        </div>
+
+        <div class="folderpop" id="folderpop">
+            <div class="folderHeader" id="folderpopheader">
+                <button class="closeButton" id="closeButt" >X</button>
+                <img src="folder.png"  class="folderlogo">
+                <div class="toolsbar">
+                    <img src="xplogo.png">
+                    <p>Files</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Favorites</p>
+                    <p>Tools</p>
+                    <p>Help</p>
+                </div>
+            </div>
+            <div id="certFolder">
+                <p class="Nametag">Certificates</p>
+                <img src="pdf.png" alt="" class="pdf" onclick="window.open('cert/Orange Javascript.pdf')">
+                <a href="cert/Orange Javascript.pdf" target="_blank"><p class="pdftitle" >JavaScript</p></a>
+                <img src="pdf.png" alt="" class="pdf" id="pdf2" onclick="window.open('cert/Google Data.pdf')">
+                <a href="cert/Google Data.pdf" target="_blank"><p class="pdftitle" id="pdftitle2">Google Data Analytics</p></a>
+                <img src="pdf.png" alt="" class="pdf" id="pdf3" ONCLICK="window.open('cert/Intro to cyber.pdf')">
+                <a href="cert/Intro to cyber.pdf" target="_blank"><p class="pdftitle" id="pdftitle3">Intro to cyber security</p></a>
+            </div>
+            <div id="cycleFolder">
+                <p class="Nametag">Recycle bin</p> 
+                    <img src="teaMan.png" alt="" class="pdf" id="teaManLogo" onclick="window.open('https://ti03.itch.io/tea-man')">
+                   <a href="https://ti03.itch.io/tea-man" target="_blank"> <p id="teaManText" class="pdftitle">Tea Man the game</p></a>
+            </div>
+        </div>
+        <script>    //script fot the popup
+            let pop = document.getElementById("startpopup");
+            var buttoncheck=0 ;
+            function startpopFun(){
+                if(buttoncheck == 0){
+                pop.classList.add("popup");
+                buttoncheck =1;
+                }
+                else {
+                    pop.classList.remove("popup");
+                    buttoncheck =0;
+                }
+            }
+        </script>
+
+
+        <script>
+
+
+        // certifcate Folder click check 
+            let certificate = document.getElementById("certifcateFoldertext");  
+            certificate.addEventListener('click',(e)=>{
+            document.getElementById("folderpop").style.visibility = "visible";
+            document.getElementById('certFolder').style.visibility = "visible";
+            document.getElementById('cycleFolder').style.visibility = "hidden";
+        })
+        let certificateImg = document.getElementById("certifcateFolder");  
+            certificateImg.addEventListener('click',(e)=>{
+            document.getElementById("folderpop").style.visibility = "visible";
+            document.getElementById('certFolder').style.visibility = "visible";
+            document.getElementById('cycleFolder').style.visibility = "hidden";
+        })
+
+
+        // recycle bin click check
+            let cyclebin = document.getElementById("recyclebintext");  
+          cyclebin.addEventListener('click',(e)=>{
+            document.getElementById("folderpop").style.visibility = "visible";
+            document.getElementById('cycleFolder').style.visibility = "visible";
+            document.getElementById('certFolder').style.visibility = "hidden";
+
+        })
+        let cyclebinImg = document.getElementById("recycleBin");  
+          cyclebinImg.addEventListener('click',(e)=>{
+            document.getElementById("folderpop").style.visibility = "visible";
+            document.getElementById('cycleFolder').style.visibility = "visible";
+            document.getElementById('certFolder').style.visibility = "hidden";
+
+        })
+
+
+
+        //close button which is on the folders
+
+        let closeB = document.getElementById('closeButt');
+        closeB.addEventListener('click',(e)=>{
+            document.getElementById("folderpop").style.visibility = "hidden";
+            document.getElementById('cycleFolder').style.visibility = "hidden";
+            document.getElementById('certFolder').style.visibility = "hidden";
+        })
+        </script>
+
+
+        <script>
+            //set time function
+            const timeFun = () => {
+            var day = new Date();
+            var pmORam;
+            var minLessThan10;
+            day.getHours()>12?(pmORam="PM"):pmORam="AM";
+            day.getMinutes()<10?(minLessThan10='0'+day.getMinutes()):minLessThan10=day.getMinutes();
+            var timeRN = (pmORam=="PM"?(day.getHours()-12):day.getHours()) + ':'+ minLessThan10+' '+pmORam;
+            $(".timeText").html(timeRN)
+            };
+            // stay update with the time
+            setInterval(timeFun,1000);
+        </script>
+
+
+
+
+<script>
+//drag element
+dragElement(document.getElementById("folderpop"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById("folderpopheader")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById("folderpopheader").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,411 @@
+
+html { 
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+a {
+    color: white; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+.footer{
+    color:white;
+    position: fixed;
+    left:0 ;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(rgb(169, 169, 255) 0% ,blue 50%,rgb(25, 79, 242)  100% );
+
+    z-index: 10;
+}
+.start{
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 25px;
+    text-shadow: 0px 0px 4px #000;
+    padding-left: 20;
+    border: 0;
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+ 
+    background: linear-gradient(rgb(31, 142, 0) 0% ,rgb(0, 255, 8) 50%,rgb(90, 255, 90)  100% );
+    z-index: 10;
+
+
+}
+.start:hover{
+    background: linear-gradient(rgb(24, 109, 0) 0% ,rgb(0, 196, 7) 50%,rgb(33, 255, 33)  100% )
+
+}
+.xplogo{
+    width: 25;
+    height:25;
+    position: fixed;
+    bottom: 3;
+    left: 10;
+    z-index: 11;
+}
+.startpopup{
+    position: fixed;
+    width: 300px;
+    height: 500px;
+    bottom: 30;
+    left: 0;
+    box-shadow: 5px 5px 10px #000;
+    visibility: hidden;
+    background: linear-gradient(rgb(0, 0, 197)0% ,blue 14%,rgb(25, 79, 242)  18% , rgb(255, 255, 255) 19% , rgb(255, 255, 255) 92% ,rgb(0, 0, 197) 93% ,blue 95%,rgb(25, 79, 242)  100%  );
+    z-index: 9;
+}
+.popup{
+    visibility: visible;
+
+}
+.popout{
+    visibility: hidden;
+
+}
+
+
+
+#mypic{
+    position: fixed;
+    margin-top: 10;
+    margin-left: 5;
+    border: 2px ;
+    border-style: ridge;
+    border-color: white;
+
+    height: 70px;
+    width: 70px;
+}
+#myname, #mymajor{
+    position: fixed;
+    margin-left: 90;
+    margin-top: 30;
+    color: white;
+    font-size: 20;
+
+}
+#mymajor{
+    margin-top: 55;
+    margin-left: 99;
+    font-size: 10;
+}
+
+
+
+
+.programmingLang h3{
+    position: fixed;
+}
+.programmingLang h3:hover{
+    transform: scale(1.1);
+}
+.programmingLang img{
+    position: fixed;
+    width: 30;
+    height: 30;
+}
+#JS{
+    left: 20;
+    bottom: 380;
+}
+#JSt{
+    left: 60;
+    bottom: 365;
+}
+#python{
+    left: 20;
+    bottom:330 ;
+}
+#pythont{
+left: 60;
+bottom: 315;
+}
+#cpp{
+    height: 35;
+    left: 20;
+    bottom: 280;
+}
+#cppt{
+    left: 60;
+    bottom: 270;
+}
+#programmingt{
+    position: fixed;
+    font-size: 15;
+    left: 50;
+    bottom: 400;
+}
+.line,.line2{
+    position: fixed;
+    width: 200;
+    border-top: 1px solid black;
+    left: 40;
+    bottom: 405;
+}
+#programs{
+    position: fixed;
+    font-size: 15;
+    left: 70;
+    bottom: 235;
+}
+.line2{
+    bottom: 245;
+}
+#unity{
+    width: 35;
+    height: 35;
+    left: 20;
+    bottom: 200;
+}
+#unityt{
+    left: 60;
+    bottom:190 ;
+}
+#blender{
+    left: 20;
+    bottom: 150;
+}
+#blendert{
+    left: 60;
+    bottom:135 ;
+}
+
+
+
+
+.timeRN{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    width: 90px;
+    height: 30px;
+    font-size: 17;
+    text-align: right;
+    padding-right: 10;
+    text-shadow: 0px 0px 2px #000;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    background: linear-gradient(rgb(54, 181, 255) 0%, rgb(0, 161, 224)20%,rgb(2, 108, 206)80%,rgb(54, 181, 255)  100%);
+    z-index: 10;
+
+}
+.timeText{
+    position: fixed;
+    bottom: -11;
+    right: 5;
+    width: max-content;
+    height: max-content;
+    z-index: 11;
+
+}
+.box{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+}
+.progName{
+    position: fixed;
+    color: white;
+    text-shadow: 0px 0px 4px #000;
+}
+.progName:hover{
+    background-color: blue;
+}
+#justbotlogo{
+    top: 20;
+    left: 20;
+}
+#justbotText{
+    text-align: center;
+    top: 55;
+    height: max-content;
+    width: max-content ;
+}
+#chromeExLogo{
+    top: 180;
+    left: 20;
+}
+#chromeExText{
+    text-align: center;
+    top: 215;
+
+    height: max-content;
+    width: max-content ;
+}
+#recycleBin{
+    height: 40px;
+    width: 40px;
+    bottom: 70;
+    right: 35;
+}
+#recyclebintext{
+    height: max-content;
+    width: max-content;
+    bottom: 35 ;
+    right: 15;
+}
+#certifcateFolder{
+    top: 100;
+    left: 20;
+}
+#certifcateFoldertext{
+    position: fixed;
+    top: 135;
+    left: 10;
+}
+.folderpop{
+    position: fixed;
+    width: 1000;
+    height: 600;
+    background: rgb(255, 255, 255);
+    border: 3px solid blue;
+
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    box-shadow: 5px 5px 10px #000;
+    z-index: 2;
+    visibility: hidden;
+}
+.folderHeader{
+    position: fixed;
+    width:1001 ;
+    height: 30;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgb(169, 169, 255) 0% ,blue 50%,rgb(25, 79, 242)  100% );
+    bottom: 500;
+    z-index: 3;
+}
+.toolsbar{
+    position: fixed;
+    background: rgb(241, 241, 231);
+    width: 100%;
+    height: 20;
+    top: 30;
+    z-index: 2;
+
+}
+.toolsbar p{
+    position: relative;
+    top: -17;
+    display: inline-block;
+    margin-left: 10;
+}
+.toolsbar p:hover{
+background-color: rgb(215, 215, 215);
+}
+.toolsbar img{
+    position: fixed;
+    width: 25;
+    height: 20;
+    background: white;
+    right: 5;
+}
+.closeButton{
+    position: fixed;
+    right: 2;
+    color: white;
+    font-size:20 ;
+    font-style: bold;
+    border:2px solid white;
+    border-radius: 20%;
+    background:linear-gradient(rgb(255, 78, 78) 0% ,rgb(201, 0, 0) 50%,rgb(255, 64, 64)  100% );
+    z-index: 5;
+}
+.closeButton:hover{
+
+    background:linear-gradient(rgb(177, 51, 51) 0% ,rgb(143, 2, 2) 50%,rgb(201, 50, 50)  100% );
+}
+.folderlogo{
+    width: 20;
+    height: 20;
+    position: fixed;
+    left: 5;
+    top: 5;
+}
+#certFolder{
+    position: fixed;
+    visibility: hidden;
+    z-index: 3;
+}
+#cycleFolder{
+    visibility: hidden;
+    z-index: 3;
+}
+#cycleFolder h1{
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+}
+#teaManLogo{
+    position: fixed;
+    z-index: 3;
+    width: 64;
+    height: 64;
+    top: 60;
+    left: 20;
+}
+#teaManText{
+    text-align: center;
+    position: fixed;
+    left:16;
+    top: 110;
+    height: max-content;
+    width: 70 ;
+}
+.pdf{
+    position: fixed;
+    z-index: 3;
+    width: 52;
+    height: 64;
+    top: 60;
+    left: 20;
+}
+.Nametag{
+    position: fixed;
+    color: white;
+    font-size: 15;
+    top: -9;
+    text-shadow: 0px 0px 3px #000;
+    left: 30;
+    z-index: 4;
+}
+.pdftitle{
+    position: fixed;
+    left:15;
+    top: 115;
+}
+.pdftitle:hover{
+    background-color: rgb(0, 136, 255);
+}
+.folderpop a{
+    color: black;
+}
+#pdftitle2{
+    text-align: center;
+    left: 90;
+    width: 90;
+}
+#pdf2{
+    left: 108;
+}
+#pdf3{
+    left: 205;
+}
+#pdftitle3{
+    left: 190;
+    text-align: center;
+    width: 90;
+}
