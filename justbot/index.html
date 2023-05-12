@@ -1,0 +1,74 @@
+<html>
+
+
+<head>
+
+<title>JUST Days</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+     <style>img[alt="www.000webhost.com"]{display:none;}</style>
+
+</head>
+
+
+<body>
+
+<div class="header"></div>
+<div class="stars"></div>
+<div class="blackthing"></div>
+<div class="box">JUST Days is a twitter bot project<br > Made 100% with python and hosted in <a href="https://pythonanywhere.com/" target="_blank">PythonAnyWhere.com</a><br><br>Are you counting down the days till your next vacation? If so, you might want to follow <a href="https://twitter.com/JUST_days_">@JUST_days_</a><br>a twitter bot that tweets every day how many days are left until your dream destination.<br><br><a href="https://twitter.com/JUST_days_">follow us now !</a></div>
+
+<a href="https://twitter.com/JUST_days_"><img src="twitterlogo.png" alt="Twitter Logo" class="twitterlogo" ></a>
+
+<div  class= "mainText">
+<h1>JUST Days</h1>
+</div>
+
+
+<div class="mainDate">
+<p>Days lefy</p>
+</div>
+
+<script>
+    var date = new Date();
+    day = date.getDate();
+    
+
+var date1 = new Date();
+var date2 = new Date("6/25/2023");
+  
+// To calculate the time difference of two dates
+var Difference_In_Time = date2.getTime() - date1.getTime();
+  
+// To calculate the no. of days between two dates
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+var intvalue = Math.ceil( Difference_In_Days );
+
+
+if(intvalue>10){
+$(".mainDate").html(intvalue + "<br>"+'Days till the vacation');
+}
+else if(intvalue<11 && intvalue>2){
+$(".mainDate").html(intvalue + "<br>"+'Days till the vacation');
+}
+else if(intvalue==2||intvalue==1){
+$(".mainDate").html(intvalue + "<br>"+'Days');
+
+}
+else if (intvalue == 0 ){
+$(".mainDate").html("Have a great vacation♥");
+}
+else {
+$(".mainDate").html("wait the update");
+}
+
+</script>
+
+
+</body>
+</html>
