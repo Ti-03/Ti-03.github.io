@@ -1,6 +1,6 @@
 
 html { 
-    background: url(background.jpg) no-repeat center center fixed; 
+    background: url(img/background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -220,6 +220,8 @@ bottom: 315;
 }
 .progName:hover{
     background-color: blue;
+    /*make the mouse pointer like clicking */
+    cursor:default;
 }
 #justbotlogo{
     top: 20;
@@ -238,6 +240,18 @@ bottom: 315;
 #chromeExText{
     text-align: center;
     top: 215;
+
+    height: max-content;
+    width: max-content ;
+}
+#githubLogo{
+    top: 260;
+    left: 20;
+}
+#githubText{
+    text-align: center;
+    top: 295;
+    left: 20;
 
     height: max-content;
     width: max-content ;
@@ -389,6 +403,7 @@ background-color: rgb(215, 215, 215);
 }
 .pdftitle:hover{
     background-color: rgb(0, 136, 255);
+    cursor: default;
 }
 .folderpop a{
     color: black;
